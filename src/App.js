@@ -48,21 +48,20 @@ function App() {
           </div>
         </div>
       </nav>
-      <main className="container mx-auto my-4">
+      <main className="container mx-auto my-4 px-4 md:px-0">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl font-semibold mb-4">Genomium</h1>
           <p className="text-lg mb-4">
             Welcome to Genomium, a collection of tools for exploring microbial genomes.
           </p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {tools.map(tool => (
               <a key={tool.url} href={tool.url} className="bg-white hover:bg-gray-100 border border-gray-300 py-4 px-6 rounded-lg shadow-lg text-center text-blue-500 hover:text-blue-600">
                 <h2 className="text-xl font-medium mb-2">
                   {tool.icon}
                   {tool.name}
                 </h2>
-                <p className="text-lg text-gray-600
-                ">{tool.desc}</p>
+                <p className="text-lg text-gray-600">{tool.desc}</p>
               </a>
             ))}
           </div>
@@ -73,4 +72,3 @@ function App() {
 }
 
 export default App;
-
