@@ -77,6 +77,7 @@ function App() {
                   {tool.name}
                 </h2>
                 <p className="text-lg text-gray-600">{tool.desc}</p>
+                </a>
             ))}
             {supplementalTools.map(tool => (
               <a key={tool.url} href={tool.url} className="bg-white hover:bg-gray-100 border border-gray-300 py-2 px-3 rounded-lg shadow-lg text-center text-blue-500 hover:text-blue-600">
