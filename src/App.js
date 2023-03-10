@@ -4,8 +4,44 @@ import { HiDesktopComputer } from 'react-icons/hi';
 import { BiDna } from 'react-icons/bi';
 import {CgListTree} from 'react-icons/cg';
 import {SiElasticstack} from 'react-icons/si';
+import {FaGlobeAfrica} from 'react-icons/fa';
+import {FaDatabase} from 'react-icons/fa';
+import {FaClock} from 'react-icons/fa';
 import logo from './logo.svg';
 import './App.css';
+
+
+const supplementalTools = [
+  {
+    name: 'CovGlobe',
+    url: '//covglobe.org',
+    desc: 'Exploring geospatial patterns in SARS-CoV-2 lineages',
+    icon: <FaGlobeAfrica className="inline-block mr-2" />
+   
+  },
+  {
+    name: 'Codon2Nucleotide',
+    url: '//codon2nucleotide.theo.io',
+    desc: 'Convert coordinate types, and between ORF1ab/a/b/nsps for SARS-CoV-2',
+    icon: <HiDesktopComputer className="inline-block mr-2" />
+  }
+  ,
+  {
+    name: 'PhenoPlasm',
+    url: '//phenoplasm.org',
+    desc: 'A database of published phenotypes for malaria parasite genes',
+    icon: <FaDatabase className="inline-block mr-2" />
+  
+  },
+  {
+    name: 'Chronumental',
+    url: '//github.com/theosanderson/chronumental',
+    desc: 'An installable tool for dating large phylogenetic trees',
+    icon: <FaClock className="inline-block mr-2" />
+
+  }
+];
+
 
 const tools = [
   {
@@ -51,7 +87,7 @@ function App() {
       <main className="container mx-auto my-4 px-4 md:px-0">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl font-semibold mb-4">Genomium</h1>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-8">
             Welcome to Genomium, a collection of tools for exploring microbial genomes.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -64,6 +100,23 @@ function App() {
                 <p className="text-lg text-gray-600">{tool.desc}</p>
               </a>
             ))}
+          </div>
+          <hr className="my-12 w-full border-gray-300 " />
+
+            <div className="flex flex-col items-center">
+          <div 
+          // center items
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            {supplementalTools.map(tool => (
+              <a key={tool.url} href={tool.url} className="bg-white hover:bg-gray-100 border border-gray-300 py-4 px-6 rounded-lg shadow-lg text-center text-blue-500 hover:text-blue-600">
+                <div className="flex items-center justify-center mb-2">
+                  {tool.icon}
+                  <span className="ml-2 font-medium">{tool.name}</span>
+                </div>
+                <p className="text-gray-600">{tool.desc}</p>
+              </a>
+            ))}
+          </div>
           </div>
         </div>
       </main>
