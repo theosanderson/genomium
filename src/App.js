@@ -16,28 +16,28 @@ const supplementalTools = [
     name: 'CovGlobe',
     url: '//covglobe.org',
     desc: 'Exploring geospatial patterns in SARS-CoV-2 lineages',
-    icon: <FaGlobeAfrica className="inline-block mr-2" />
+    icon: <FaGlobeAfrica className="inline-block mr-1" />
    
   },
   {
     name: 'Codon2Nucleotide',
     url: '//codon2nucleotide.theo.io',
     desc: 'Convert coordinate types, and between ORF1ab/a/b/nsps for SARS-CoV-2',
-    icon: <HiDesktopComputer className="inline-block mr-2" />
+    icon: <HiDesktopComputer className="inline-block mr-1" />
   }
   ,
   {
     name: 'PhenoPlasm',
     url: '//phenoplasm.org',
     desc: 'A database of published phenotypes for malaria parasite genes',
-    icon: <FaDatabase className="inline-block mr-2" />
+    icon: <FaDatabase className="inline-block mr-1" />
   
   },
   {
     name: 'Chronumental',
     url: '//github.com/theosanderson/chronumental',
     desc: 'An installable tool for dating large phylogenetic trees',
-    icon: <FaClock className="inline-block mr-2" />
+    icon: <FaClock className="inline-block mr-1" />
 
   }
 ];
