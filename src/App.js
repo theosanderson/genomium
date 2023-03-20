@@ -11,6 +11,32 @@ import logo from './logo.svg';
 import './App.css';
 
 
+const Wrapper = ({ children, menu }) => {
+  return (
+    <div className="min-h-screen bg-gray-100">
+      <nav className="bg-white shadow">
+        <div className="container px-4 mx-auto">
+          <div className="flex justify-between items-center py-4">
+            <a href="/" className="text-lg font-semibold">
+              <img src={logo} alt="Logo" className="h-16" />
+            </a>
+            <div className="hidden md:block">
+              {menu.map(tool => (
+                <button key={tool.url} onClick={tool.onclick} className="text-gray-600 hover:text-gray-800 mx-3 hover:text-blue-600 hover:underline">
+                  
+                  {tool.name}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </nav>
+      {children}
+    </div>
+  );
+};
+
+
 const supplementalTools = [
   {
     name: 'CovGlobe',
@@ -65,26 +91,37 @@ const tools = [
 ];
 
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-100">
-      <nav className="bg-white shadow">
-        <div className="container px-4 mx-auto">
-          <div className="flex justify-between items-center py-4">
-            <a href="/" className="text-lg font-semibold">
-              <img src={logo} alt="Logo" className="h-16" />
-            </a>
-            <div className="hidden md:block">
-              {tools.map(tool => (
-                <a key={tool.url} href={tool.url} className="text-gray-600 hover:text-gray-800 mx-3 hover:text-blue-600">
-                  {tool.icon}
-                  {tool.name}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </nav>
+  const [page, setPage] = React.useState('home');
+  const menu = [
+    {
+      name: 'Home',
+      onclick: () => setPage('home')
+      
+    },
+    {
+      name: 'About',
+      onclick: () => setPage('about')
+    },
+  ];
+
+  if (page === 'about') {
+    return <Wrapper menu={menu}>
       <main className="container mx-auto my-4 px-4 md:px-0">
+        <h1 className="text-3xl font-semibold mb-4">About</h1>
+        <p className="text-lg mb-8">
+          Genomium is a collection of tools for exploring microbial genomes built by <a href="https://theo.io" className="text-blue-500 hover:text-blue-600 hover:underline">Theo Sanderson</a>.
+        </p>
+       </main>
+    </Wrapper>
+
+
+
+  }
+  else
+  {
+    return (
+      <Wrapper menu={menu}>
+        <main className="container mx-auto my-4 px-4 md:px-0">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl font-semibold mb-4">Genomium</h1>
           <p className="text-lg mb-8">
@@ -120,8 +157,12 @@ function App() {
           </div>
         </div>
       </main>
-    </div>
-  );
+      </Wrapper>
+    );
+  }
 }
+
+
+  
 
 export default App;
