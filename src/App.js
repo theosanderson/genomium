@@ -6,6 +6,7 @@ import {CgListTree} from 'react-icons/cg';
 import {SiElasticstack} from 'react-icons/si';
 import {FaGlobeAfrica} from 'react-icons/fa';
 import {FaDatabase} from 'react-icons/fa';
+import {FaFlask} from 'react-icons/fa';
 import {FaClock} from 'react-icons/fa';
 import logo from './logo.svg';
 import './App.css';
@@ -65,7 +66,13 @@ const supplementalTools = [
     desc: 'An installable tool for dating large phylogenetic trees',
     icon: <FaClock className="inline-block mr-1" />
 
-  }
+  },
+  {
+    name: 'Mixology',
+    url: '//mixology.science',
+    desc: 'A tool for calculating recipes for laboratory solutions',
+    icon: <FaFlask className="inline-block mr-2" />
+  },
 ];
 
 
@@ -87,7 +94,8 @@ const tools = [
     url: '//deeperseq.genomium.org',
     desc: 'A tool for exploring deep sequencing data for microbial genomes',
     icon: <SiElasticstack className="inline-block mr-2" />
-  }
+  },
+
 ];
 
 function App() {
