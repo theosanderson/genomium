@@ -117,7 +117,7 @@ function App() {
       <main className="container mx-auto my-4 px-4 md:px-0">
         <h1 className="text-3xl font-semibold mb-4">About</h1>
         <p className="text-lg mb-8">
-          Genomium is a collection of tools for exploring microbial genomes built by <a href="https://theo.io" className="text-blue-500 hover:text-blue-600 hover:underline">Theo Sanderson</a>.
+          Genomium is a collection of tools for exploring microbial genomes built by <a href="https://theo.io" className="text-blue-500 hover:text-blue-600 hover:underline">Theo Sanderson</a>, alongside colleagues and collaborators.
         </p>
        </main>
     </Wrapper>
