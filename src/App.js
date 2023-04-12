@@ -131,8 +131,8 @@ function App() {
       <Wrapper menu={menu}>
         <main className="container mx-auto my-4 px-4 md:px-0">
         <div className="flex flex-col items-center">
-          <h1 className="text-3xl font-semibold mb-4">Genomium</h1>
-          <p className="text-lg mb-8">
+         
+          <p className="text-lg mb-8 mt-3">
             Welcome to Genomium, a collection of tools for exploring microbial genomes (and more!)
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
