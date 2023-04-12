@@ -55,7 +55,7 @@ const supplementalTools = [
   ,
   {
     name: 'PhenoPlasm',
-    url: '//phenoplasm.org',
+    url: 'http://phenoplasm.org',
     desc: 'A database of published phenotypes for malaria parasite genes',
     icon: <FaDatabase className="inline-block mr-1" />
   
