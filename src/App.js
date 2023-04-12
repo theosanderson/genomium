@@ -151,7 +151,7 @@ function App() {
             <div className="flex flex-col items-center">
           <div 
           // center items
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {supplementalTools.map(tool => (
               <a key={tool.url} href={tool.url} className="bg-white hover:bg-gray-100 border border-gray-300 py-4 px-6 rounded-lg shadow-lg text-center text-blue-500 hover:text-blue-600">
                 <div className="flex items-center justify-center mb-2">
