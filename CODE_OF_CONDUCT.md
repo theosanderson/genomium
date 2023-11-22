@@ -1,7 +1,7 @@
 
 # Genomium follows the Contributor Covenant Code of Conduct
 
-This code of conduct applies to all Genomium projects, including Taxonium.
+_This code of conduct applies to all Genomium projects, including Taxonium._
 
 ## Our Pledge
 
