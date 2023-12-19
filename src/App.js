@@ -8,6 +8,7 @@ import {FaGlobeAfrica} from 'react-icons/fa';
 import {FaDatabase} from 'react-icons/fa';
 import {FaFlask} from 'react-icons/fa';
 import {FaClock} from 'react-icons/fa';
+import { FaHospital } from "react-icons/fa6";
 import logo from './logo.svg';
 import './App.css';
 
@@ -36,6 +37,22 @@ const Wrapper = ({ children, menu }) => {
     </div>
   );
 };
+
+const honoraryTools = [
+  {
+    name: 'Mixology',
+    url: '//mixology.science',
+    desc: 'A tool for calculating recipes for laboratory solutions',
+    icon: <FaFlask className="inline-block mr-2" />
+  },
+  {
+    name: 'Hospital Prescriptions',
+    url: '//hospitalprescriptions.genomium.org',
+    desc: 'A data explorer for England\'s hospital prescription data',
+    icon: <FaHospital className="inline-block mr-2" />
+
+  }
+]
 
 
 const supplementalTools = [
@@ -67,12 +84,7 @@ const supplementalTools = [
     icon: <FaClock className="inline-block mr-1" />
 
   },
-  {
-    name: 'Mixology',
-    url: '//mixology.science',
-    desc: 'A tool for calculating recipes for laboratory solutions',
-    icon: <FaFlask className="inline-block mr-2" />
-  },
+ 
 ];
 
 
@@ -151,7 +163,7 @@ function App() {
             <div className="flex flex-col items-center">
           <div 
           // center items
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             {supplementalTools.map(tool => (
               <a key={tool.url} href={tool.url} className="bg-white hover:bg-gray-100 border border-gray-300 py-4 px-6 rounded-lg shadow-lg text-center text-blue-500 hover:text-blue-600">
                 <div className="flex items-center justify-center mb-2">
@@ -162,6 +174,25 @@ function App() {
               </a>
             ))}
           </div>
+          <hr className="my-12 w-full border-gray-300" />
+          <div className="text-gray-500 mb-6 text-lg">Bonus tools</div>
+
+        {/* Honorary Tools Section */}
+        <div className="flex flex-wrap justify-center items-center">
+          {honoraryTools.map(tool => (
+
+            <a key={tool.url} href={tool.url} className="bg-white hover:bg-gray-100 border border-gray-300 p-2 rounded-lg shadow-lg text-center text-blue-500 hover:text-blue-600 mx-2 my-1 w-1/2 md:w-1/4 h-36">
+              {tool.icon}
+              <span className="text-sm font-bold">{tool.name}</span>
+
+            <div className="text-sm text-gray-600 p-4">{tool.desc}</div>
+
+            </a>
+          ))}
+        </div>
+          
+
+
           </div>
         </div>
       </main>
