@@ -9,6 +9,7 @@ import {FaDatabase} from 'react-icons/fa';
 import {FaFlask} from 'react-icons/fa';
 import {FaClock} from 'react-icons/fa';
 import { FaHospital } from "react-icons/fa6";
+import { IoIosGitNetwork } from "react-icons/io";
 import logo from './logo.svg';
 import './App.css';
 
@@ -51,7 +52,15 @@ const honoraryTools = [
     desc: 'A data explorer for England\'s hospital prescription data',
     icon: <FaHospital className="inline-block mr-2" />
 
+  },
+{
+    name: 'Lineage networks',
+    url: '//lineagenetwork.streamlit.app/',
+    desc: 'Visualise similarities and differences between PANGO lineages',
+    icon: <IoIosGitNetwork className="inline-block mr-2" />
+
   }
+
 ]
 
 
