@@ -3,6 +3,7 @@ import { BsTree } from 'react-icons/bs';
 import { HiDesktopComputer } from 'react-icons/hi';
 import { BiDna } from 'react-icons/bi';
 import {CgListTree} from 'react-icons/cg';
+import { CgPill } from "react-icons/cg";
 import {SiElasticstack} from 'react-icons/si';
 import {FaGlobeAfrica} from 'react-icons/fa';
 import {FaDatabase} from 'react-icons/fa';
@@ -59,7 +60,15 @@ const honoraryTools = [
     desc: 'Visualise similarities and differences between PANGO lineages',
     icon: <IoIosGitNetwork className="inline-block mr-2" />
 
+  },
+  {
+    name: 'Molnupiravir branch identification helper',
+    url: '//movbranchapp.streamlit.app/',
+    desc: 'Quantify evidence for molnupiravir-origins of a phylogenetic branch from nucleotide contexts',
+    icon: <CgPill className="inline-block mr-2" />
+
   }
+  
 
 ]
 
