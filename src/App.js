@@ -48,9 +48,9 @@ const honoraryTools = [
     icon: <FaFlask className="inline-block mr-2" />
   },
   {
-    name: 'Hospital Prescriptions',
-    url: '//hospitalprescriptions.genomium.org',
-    desc: 'A data explorer for England\'s hospital prescription data',
+    name: 'Hospital Medicines',
+    url: '//hospitalmedicines.genomium.org',
+    desc: 'A data explorer for England\'s hospital medicine usage data',
     icon: <FaHospital className="inline-block mr-2" />
 
   },
