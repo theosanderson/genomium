@@ -56,7 +56,7 @@ const honoraryTools = [
   },
 {
     name: 'Lineage networks',
-    url: '//lineage-network.genomium.org/',
+    url: '//lineage-networks.genomium.org/',
     desc: 'Visualise similarities and differences between PANGO lineages',
     icon: <IoIosGitNetwork className="inline-block mr-2" />
 
