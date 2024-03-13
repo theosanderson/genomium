@@ -64,7 +64,7 @@ const honoraryTools = [
   {
     name: 'Molnupiravir branch identification helper',
     url: '//movbranchapp.streamlit.app/',
-    desc: 'Quantify evidence for molnupiravir-origins of a phylogenetic branch from nucleotide contexts',
+    desc: 'Likelihood for molnupiravir-origins of a branch from nucleotide contexts',
     icon: <CgPill className="inline-block mr-2" />
 
   }
