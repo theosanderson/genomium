@@ -9,6 +9,7 @@ import {FaGlobeAfrica} from 'react-icons/fa';
 import {FaDatabase} from 'react-icons/fa';
 import {FaFlask} from 'react-icons/fa';
 import {FaClock} from 'react-icons/fa';
+import {FaLink} from 'react-icons/fa';
 import { FaHospital } from "react-icons/fa6";
 import { IoIosGitNetwork } from "react-icons/io";
 import logo from './logo.svg';
@@ -102,7 +103,12 @@ const supplementalTools = [
     icon: <FaClock className="inline-block mr-1" />
 
   },
- 
+  {
+    name: 'Contextualise',
+    url: '//theosanderson.github.io/contextualise/',
+    desc: 'Turn lists of mutations into contextual mutation spectra',
+    icon: <FaLink className="inline-block mr-1" />
+  },
 ];
 
 
