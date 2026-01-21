@@ -106,7 +106,7 @@ const supplementalTools = [
   {
     name: 'Contextualise',
     url: '//theosanderson.github.io/contextualise/',
-    desc: 'Contextualise mutations and explore their occurrence across sequences',
+    desc: 'Turn lists of mutations into contextual mutation spectra',
     icon: <FaLink className="inline-block mr-1" />
   },
 ];
